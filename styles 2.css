@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
+/* image  */
+body{
+  background-color: white;
+}
+.about-img img {
+  border-radius: var(--radius);
+  object-fit: cover;
+  height: 20rem;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+/* title for margarita madness */
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* moves contents down from the buttons of ingredeitns, recipe, history */
+/* .about-content {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  padding: 2rem 1.5rem;
+} */
+
+/* creates tabs to not look like a button  */
+/* .tab-btn {
+  padding: 1rem 0;
+  border: none;
+  text-transform: capitalize;
+  font-family: 'Tiro Telugu', serif;
+  font-size: 1rem;
+  display: block;
+  background: var(--clr-grey-9);  
+} */
+
+
+/* makes the ingredients, recipe, and history to the side  */
+.about-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+.about {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+/* makes contents empty  */
+.content{
+  display:none;
+}
+/* allows the contents to show up when you click on the tab now */
+.content.active {
+  display: block;
+}
