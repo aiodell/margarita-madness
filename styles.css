@@ -13,16 +13,14 @@ h2{
   font-size: 2rem;
 }
 
-.about-center image {
+.image img {
   border-radius: var(--radius);
   object-fit: cover;
   height: 20rem;
   display: block;
+  margin-bottom: 2rem;
 }
 
-.about-img {
-    margin-bottom: 2rem;
-}
 
 .section-center {
   width: 90vw;

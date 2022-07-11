@@ -79,7 +79,7 @@ about.addEventListener('click', function(e) {
 
 btns.forEach((button)=>{
    button.addEventListener("mouseover", () => {
-    button.style.backgroundColor = "white"
+    button.style.backgroundColor = "grey"
     
    })
    button.addEventListener("mouseleave", () => {
