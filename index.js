@@ -86,7 +86,9 @@ stars.forEach((star, clickedIdx) => {
         })
         
     })
+    
 })
+
 
 //creating event for mouse
 
@@ -101,36 +103,14 @@ btns.forEach((button)=>{
     })
 })
 
-
 const form = document.getElementById("comment-form");
-	form.addEventListener("submit", (e) => {
-		e.preventDefault();
-		form.reset();
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        form.reset();
         alert("Thank you for your review!")
     })
 
 
-
-
-
-//creating submit form
-// const form = document.createElement("form")
-// const attachment = document.querySelector(".rating")
-// const input = document.createElement("input")
-// const submitButton = document.createElement("button")
-
-// input.id = "customers-input"
-// input.placeholder = "Let others know how delicious the drink is."
-
-
-// submitButton.textContent = "Post Review"
-// submitButton.id="submit-button"
-
-// form.addEventListener("submit", (e) =>{
-//     e.preventDefault()
-//     form.reset()
-//     alert("Thank you for your review!")
-// })
 
 
 

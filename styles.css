@@ -80,7 +80,7 @@ li{
 
 .tab-btn:hover:not(.active) {
     background: var(--clr-primary-10);
-    color: #f7cac9;
+    color: black;
 }
 
 .tab-btn.active {
@@ -117,9 +117,11 @@ li{
 }
 
 .stars {
-    display: flex;
-
-  
+    
+    display: block;
+    margin-left: 460px;
+    margin-right: auto;
+    padding-bottom: 20px;
 }
 
 .stars a {
@@ -166,5 +168,6 @@ li{
 #comment-form{
     margin-top: auto;
     text-align: center;
+
    
 }
