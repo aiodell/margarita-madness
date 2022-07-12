@@ -1,3 +1,18 @@
+const dataIngredients = document.getElementById("data-ingredients")
+const ingredients = document.getElementById("ingredients")
+
+const dataRecipe = document.getElementById("data-recipe")
+const recipe = document.getElementById("recipe")
+
+const dataHistory = document.getElementById("data-history")
+const history = document.getElementById("history")
+
+//creating click event for buttons to switch 
+
+const btns = document.querySelectorAll(".tab-btn")
+const about = document.querySelector(".about")
+const articles = document.querySelectorAll(".content")
+
 fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
 .then(resp => resp.json())
 .then(data => {
@@ -27,8 +42,48 @@ function loopThroughObject (obj) {
         const measure = obj[key];
         li.append(measure)
         listOfIngredients.append(li)
+        
+about.append(ingredients)
+about.append(recipe)
+about.append(history)
+
     }
 }
 loopThroughObject(measurements)
 
+})
+
+about.addEventListener('click', function(e) {
+    //grabs data id 
+    const id = e.target.dataset.id
+    console.log(about)
+    if(id){
+        //will add active on any button clicked and remove active on any button not clicked
+        btns.forEach((btn)=>{
+            btn.classList.remove("active")
+            e.target.classList.add("active")
+        })
+        //hide articles
+        articles.forEach((article)=> {
+           //article is all information being display in the class content
+            article.classList.remove("active")
+        })
+        //gets matching id with the button data ids
+        const element = document.getElementById(id)
+        element.classList.add("active")
+
+  }
+})
+
+//creating event for mouse
+
+btns.forEach((button)=>{
+   button.addEventListener("mouseover", () => {
+    button.style.backgroundColor = "grey"
+    
+   })
+   button.addEventListener("mouseleave", () => {
+    button.style.backgroundColor = "white"
+    button.style.color = "black"
+    })
 })
