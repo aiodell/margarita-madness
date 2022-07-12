@@ -7,6 +7,8 @@ const recipe = document.getElementById("recipe")
 const dataHistory = document.getElementById("data-history")
 const history = document.getElementById("history")
 
+const menuBars = document.getElementById('menu-bars');
+
 //creating click event for buttons to switch 
 
 const btns = document.querySelectorAll(".tab-btn")
@@ -56,7 +58,6 @@ loopThroughObject(measurements)
 about.addEventListener('click', function(e) {
     //grabs data id 
     const id = e.target.dataset.id
-    console.log(about)
     if(id){
         //will add active on any button clicked and remove active on any button not clicked
         btns.forEach((btn)=>{
@@ -69,17 +70,66 @@ about.addEventListener('click', function(e) {
             article.classList.remove("active")
         })
         //gets matching id with the button data ids
-        const element = document.getElementById(id)
+        let element = document.getElementById(id)
         element.classList.add("active")
-
   }
 })
+
+
+const stars = document.querySelectorAll(".stars a");
+
+stars.forEach((star, clickedIdx) => {
+    star.addEventListener("click", () => {
+        stars.forEach((otherStar, otherIdx) => {
+            if (otherIdx <= clickedIdx) {
+                otherStar.classList.add("active");
+            }
+        })
+        
+    })
+})
+
+
+
+// btns.forEach((button) =>{
+//     button.addEventListener('keyDown', (e) => {
+//     console.log(e)
+//     //right key 
+//     if(e.keyCode === 39 || e.keyCode === 37){
+//         e.preventDefault();
+//         btns.classList.remove("active")
+//         e.target.classList.add("active")
+//     }
+// }
+// )})
+
+
+
+// document.addEventListener("keydown", function (event) {
+//     if(event.key === "ArrowRight") {
+//           //will add active on any button clicked and remove active on any button not clicked
+//           btns.forEach((btn)=>{
+//             btn.classList.remove("active")
+//             event.target.classList.add("active")
+//         })
+//         //hide articles
+//         articles.forEach((article)=> {
+//            //article is all information being display in the class content
+//             article.classList.remove("active")
+//         })
+//         //gets matching id with the button data ids
+//         element.classList.add("active")
+//     }
+//   });        
+
+
+
 
 //creating event for mouse
 
 btns.forEach((button)=>{
    button.addEventListener("mouseover", () => {
-    button.style.backgroundColor = "grey"
+    button.style.backgroundColor = "#d9ecd0"
     
    })
    button.addEventListener("mouseleave", () => {
@@ -87,3 +137,5 @@ btns.forEach((button)=>{
     button.style.color = "black"
     })
 })
+
+
