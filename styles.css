@@ -1,4 +1,3 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap'); */
 /* image  */
 body{
@@ -15,18 +14,42 @@ h2{
 }
 
 p{
-    font-family: 'Lexend Exa', sans-serif;
+    font-family: 'Courier Prime', monospace;
 
 }
 
 li{
     font-family: 'Courier Prime', monospace;
 }
+#recipeBook{
+  font-family: 'Courier Prime', monospace;
+}
+#historyText{
+  font-family: 'Courier Prime', monospace;
+}
+/* style input */
 
+.comment-input{
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+}
+.comment-button{
+
+  background: lightgray;
+  padding: 5px;
+  border-radius: 5px;
+}
 .image img {
   border-radius: var(--radius);
   object-fit: cover;
-  height: 20rem;
+  height: 35rem;
   display: block;
   margin-bottom: 2rem;
 }
@@ -54,6 +77,7 @@ li{
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   padding: 2rem 1.5rem;
+  
 } 
 .tab-btn:nth-child(1) {
     border-top-left-radius: var(--radius);
@@ -91,6 +115,7 @@ li{
     border-top-right-radius: var(--radius);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 
@@ -114,14 +139,14 @@ li{
 /* allows the contents to show up when you click on the tab now */
 .content.active {
   display: block;
+  background-color: lightsalmon;
+  height: 250px;
 }
 
 .stars {
-    
-    display: block;
-    margin-left: 460px;
-    margin-right: auto;
-    padding-bottom: 20px;
+  padding-bottom: 20px;
+  transform: scale(1.3);
+  text-align: center;
 }
 
 .stars a {
@@ -149,8 +174,9 @@ li{
     list-style-type: none;
   }
 
+/* makes submit area down the page more */
 #p2{
-    margin-top: 50px; 
+    margin-top: 200px; 
     text-align: center;
  
 } 
