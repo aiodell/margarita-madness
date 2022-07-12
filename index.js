@@ -7,7 +7,6 @@ const recipe = document.getElementById("recipe")
 const dataHistory = document.getElementById("data-history")
 const history = document.getElementById("history")
 
-const menuBars = document.getElementById('menu-bars');
 
 //creating click event for buttons to switch 
 
@@ -87,42 +86,8 @@ stars.forEach((star, clickedIdx) => {
         })
         
     })
+    
 })
-
-
-
-// btns.forEach((button) =>{
-//     button.addEventListener('keyDown', (e) => {
-//     console.log(e)
-//     //right key 
-//     if(e.keyCode === 39 || e.keyCode === 37){
-//         e.preventDefault();
-//         btns.classList.remove("active")
-//         e.target.classList.add("active")
-//     }
-// }
-// )})
-
-
-
-// document.addEventListener("keydown", function (event) {
-//     if(event.key === "ArrowRight") {
-//           //will add active on any button clicked and remove active on any button not clicked
-//           btns.forEach((btn)=>{
-//             btn.classList.remove("active")
-//             event.target.classList.add("active")
-//         })
-//         //hide articles
-//         articles.forEach((article)=> {
-//            //article is all information being display in the class content
-//             article.classList.remove("active")
-//         })
-//         //gets matching id with the button data ids
-//         element.classList.add("active")
-//     }
-//   });        
-
-
 
 
 //creating event for mouse
@@ -137,5 +102,15 @@ btns.forEach((button)=>{
     button.style.color = "black"
     })
 })
+
+const form = document.getElementById("comment-form");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        form.reset();
+        alert("Thank you for your review!")
+    })
+
+
+
 
 

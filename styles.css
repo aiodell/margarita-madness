@@ -80,7 +80,7 @@ li{
 
 .tab-btn:hover:not(.active) {
     background: var(--clr-primary-10);
-    color: #f7cac9;
+    color: black;
 }
 
 .tab-btn.active {
@@ -117,7 +117,11 @@ li{
 }
 
 .stars {
-    display: flex;
+    
+    display: block;
+    margin-left: 460px;
+    margin-right: auto;
+    padding-bottom: 20px;
 }
 
 .stars a {
@@ -140,4 +144,30 @@ li{
 
 .stars a.active {
     opacity: 100%;
+}
+#nav-1{
+    list-style-type: none;
+  }
+
+#p2{
+    margin-top: 50px; 
+    text-align: center;
+ 
+} 
+#customers-input{
+  margin: auto;
+  display: block;
+  width: 400px; 
+  height: 200px; 
+}
+#submit-button{
+  margin: auto;
+  display: block;
+}
+
+#comment-form{
+    margin-top: auto;
+    text-align: center;
+
+   
 }
