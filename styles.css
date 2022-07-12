@@ -118,6 +118,8 @@ li{
 
 .stars {
     display: flex;
+
+  
 }
 
 .stars a {
@@ -140,4 +142,29 @@ li{
 
 .stars a.active {
     opacity: 100%;
+}
+#nav-1{
+    list-style-type: none;
+  }
+
+#p2{
+    margin-top: 50px; 
+    text-align: center;
+ 
+} 
+#customers-input{
+  margin: auto;
+  display: block;
+  width: 400px; 
+  height: 200px; 
+}
+#submit-button{
+  margin: auto;
+  display: block;
+}
+
+#comment-form{
+    margin-top: auto;
+    text-align: center;
+   
 }
