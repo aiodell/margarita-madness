@@ -1,5 +1,12 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap'); */
+
+:root {
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  
+}
+
 /* image  */
 body{
   background-color: #f5f4f3
@@ -14,6 +21,10 @@ h2{
   font-size: 2rem;
 }
 
+#marg-title::after{
+  content: "\1F349";
+}
+
 p{
     font-family: 'Lexend Exa', sans-serif;
 
@@ -26,7 +37,7 @@ li{
 .image img {
   border-radius: var(--radius);
   object-fit: cover;
-  height: 20rem;
+  height: 30rem;
   display: block;
   margin-bottom: 2rem;
 }
@@ -76,16 +87,41 @@ li{
     cursor: pointer;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: var(--radius);
+    /* background-color: #d9ecd0;
+    color: white; */
+    transition-duration: 0.4s;
  }
 
-.tab-btn:hover:not(.active) {
-    background: var(--clr-primary-10);
-    color: black;
+
+.tab-btn:nth-child(1).active {
+  background-color: #d9ecd0;
+    color: #82b74b
 }
 
-.tab-btn.active {
-  background: var(--clr-white);
+.tab-btn:nth-child(2).active {
+ background-color: #eea29a;
+    color: #c94c4c
 }
+
+.tab-btn:nth-child(3).active {
+    background-color: #fefbd8;
+    color: #ff7b25
+}
+
+.tab-btn:nth-child(1):hover {
+  background-color: #d9ecd0;
+    color: #82b74b
+}
+
+.tab-btn:nth-child(2):hover {
+    background-color: #eea29a;
+    color: #c94c4c
+}
+.tab-btn:nth-child(3):hover {
+    background-color: #fefbd8;
+    color: #ff7b25
+}
+
 .btn-container {
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
@@ -97,8 +133,8 @@ li{
 /* makes the ingredients, recipe, and history to the side  */
 .about-center {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 3rem;
 }
 .about {
   background: var(--clr-white);
@@ -117,11 +153,9 @@ li{
 }
 
 .stars {
-    
-    display: block;
-    margin-left: 460px;
-    margin-right: auto;
     padding-bottom: 20px;
+    transform: scale(1.3);
+    text-align: center;
 }
 
 .stars a {
@@ -171,3 +205,25 @@ li{
 
    
 }
+
+ #recipeBook{
+  font-family: 'Courier Prime', monospace;
+}
+#historyText{
+  font-family: 'Courier Prime', monospace;
+}
+/* style input */
+
+.comment-input{
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+} 
+
+
