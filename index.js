@@ -99,14 +99,12 @@ stars.forEach((star, clickedIdx) => {
     })
     
 })
-
 // create form and submit
+
 const form = document.getElementById("comment-form");
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         form.reset();
         alert("Thank you for your review!")
     })
-
-
 }) // end of fetch
