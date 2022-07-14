@@ -53,8 +53,6 @@ about.append(history)
 }
 loopThroughObject(measurements)
 
-})
-
 about.addEventListener('click', function(e) {
     //grabs data id 
     const id = e.target.dataset.id
@@ -75,6 +73,19 @@ about.addEventListener('click', function(e) {
   }
 })
 
+// create the mouseover listener
+
+const commentBtn = document.querySelector(".comment-button")
+
+commentBtn.addEventListener("mouseover", () => {
+    commentBtn.style.backgroundColor = '#d9ecd0';
+    commentBtn.style.color = '#82b74b'
+})
+commentBtn.addEventListener("mouseleave", () => {
+    commentBtn.style.backgroundColor = 'white';
+    commentBtn.style.color = '#eea29a'
+})
+
 const stars = document.querySelectorAll(".stars a");
 
 stars.forEach((star, clickedIdx) => {
@@ -89,19 +100,13 @@ stars.forEach((star, clickedIdx) => {
     
 })
 
-//creating event for mouse
-
-btns.forEach((button)=>{
-   button.addEventListener("mouseover", () => {
-   })
-
-   button.addEventListener("mouseleave", () => {
-    })
-})
-
+// create form and submit
 const form = document.getElementById("comment-form");
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         form.reset();
         alert("Thank you for your review!")
     })
+
+
+}) // end of fetch
