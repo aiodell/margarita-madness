@@ -27,7 +27,12 @@ h2{
 
 p{
   font-family: 'Roboto', sans-serif;
+}
 
+#sub{
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  width: 54%;
 }
 
 li{
@@ -226,7 +231,7 @@ li{
 
 body{
   background-color: #f5f4f3;
-  background-image: url('4.jpeg');
+  background-image: url('4.jpg');
   height: 900px;
   background-position: center;
   background-repeat: no-repeat;
