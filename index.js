@@ -39,7 +39,6 @@ const measurements = {
 
 function loopThroughObject (obj) {
     for (let key in obj) {
-        const tapeSection = document.querySelector(".tape-section")
         const li = document.createElement("li")
         const measure = obj[key];
         li.append(measure)
@@ -75,7 +74,6 @@ about.addEventListener('click', function(e) {
   }
 })
 
-
 const stars = document.querySelectorAll(".stars a");
 
 stars.forEach((star, clickedIdx) => {
@@ -90,17 +88,17 @@ stars.forEach((star, clickedIdx) => {
     
 })
 
-
 //creating event for mouse
 
-btns.forEach((button)=>{
-   button.addEventListener("mouseover", () => {
+const commentBtn = document.querySelector(".comment-button")
 
-    
-   })
-   button.addEventListener("mouseleave", () => {
- 
-    })
+commentBtn.addEventListener("mouseover", () => {
+    commentBtn.style.backgroundColor = '#d9ecd0';
+    commentBtn.style.color = '#82b74b'
+})
+commentBtn.addEventListener("mouseleave", () => {
+    commentBtn.style.backgroundColor = 'white';
+    commentBtn.style.color = '#eea29a'
 })
 
 const form = document.getElementById("comment-form");
@@ -109,8 +107,3 @@ const form = document.getElementById("comment-form");
         form.reset();
         alert("Thank you for your review!")
     })
-
-
-
-
-
