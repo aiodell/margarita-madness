@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap%27');
+
 :root {
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
@@ -27,6 +28,10 @@ h2{
 p{
   font-family: 'Roboto', sans-serif;
 
+#sub{
+  font-family: 'Roboto', sans-serif;
+  color:black;
+  width: 54%;
 }
 
 li{
@@ -88,40 +93,7 @@ li{
     border-radius: var(--radius);
     transition-duration: 0.4s;
  }
-
-
- .tab-btn:nth-child(1).active {
-  background-color: #d9ecd0;
-    color: #82b74b
-}
-
-.tab-btn:nth-child(2).active {
- background-color: #eea29a;
-    color: #c94c4c
-}
-
-.tab-btn:nth-child(3).active {
-    background-color: #fefbd8;
-    color: #ff7b25
-}
-
-
-.tab-btn:nth-child(1):hover {
-  background-color: #d9ecd0;
-    color: #82b74b
-}
-
-.tab-btn:nth-child(2):hover {
-    background-color: #eea29a;
-    color: #c94c4c
-}
-.tab-btn:nth-child(3):hover {
-    background-color: #fefbd8;
-    color: #ff7b25
-}
-
-
-
+ 
 .btn-container {
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
@@ -194,16 +166,72 @@ li{
   width: 400px; 
   height: 200px; 
 }
+
+
+#comment-form{
+    margin-top: auto;
+    text-align: center;
+}
+
+ #recipeBook{
+  font-family: 'Roboto', sans-serif;
+}
+#historyText{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+  background-color: #f5f4f3;
+  background-image: url('4.jpg');
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*submit button style*/
+
 #submit-button{
   margin: auto;
   display: block;
 }
 
-#comment-form{
-    margin-top: auto;
-    text-align: center;
+.comment-button {
+  border-radius: 999px;
+  box-shadow: #f7786b 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #eea29a;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
 
-   
+/*input box style*/
+.comment-input{
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+} 
+
 }
 
  #recipeBook{
@@ -260,4 +288,35 @@ body{
   width: fit-content;
   word-break: break-word;
   border: 0;
+}
+=======
+/*tab styles*/
+.tab-btn:nth-child(1).active {
+  background-color: #d9ecd0;
+    color: #82b74b
+}
+
+.tab-btn:nth-child(2).active {
+ background-color: #eea29a;
+    color: #c94c4c
+}
+
+.tab-btn:nth-child(3).active {
+    background-color: #fefbd8;
+    color: #ff7b25
+}
+
+
+.tab-btn:nth-child(1):hover {
+  background-color: #d9ecd0;
+    color: #82b74b
+}
+
+.tab-btn:nth-child(2):hover {
+    background-color: #eea29a;
+    color: #c94c4c
+}
+.tab-btn:nth-child(3):hover {
+    background-color: #fefbd8;
+    color: #ff7b25
 }

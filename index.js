@@ -39,6 +39,7 @@ const measurements = {
 
 function loopThroughObject (obj) {
     for (let key in obj) {
+        const tapeSection = document.querySelector(".tape-section")
         const li = document.createElement("li")
         const measure = obj[key];
         li.append(measure)
@@ -51,8 +52,6 @@ about.append(history)
     }
 }
 loopThroughObject(measurements)
-
-})
 
 about.addEventListener('click', function(e) {
     //grabs data id 
@@ -74,6 +73,19 @@ about.addEventListener('click', function(e) {
   }
 })
 
+// create the mouseover listener
+
+const commentBtn = document.querySelector(".comment-button")
+
+commentBtn.addEventListener("mouseover", () => {
+    commentBtn.style.backgroundColor = '#d9ecd0';
+    commentBtn.style.color = '#82b74b'
+})
+commentBtn.addEventListener("mouseleave", () => {
+    commentBtn.style.backgroundColor = 'white';
+    commentBtn.style.color = '#eea29a'
+})
+
 const stars = document.querySelectorAll(".stars a");
 
 stars.forEach((star, clickedIdx) => {
@@ -87,19 +99,7 @@ stars.forEach((star, clickedIdx) => {
     })
     
 })
-
-//creating event for mouse
-
-const commentBtn = document.querySelector(".comment-button")
-
-commentBtn.addEventListener("mouseover", () => {
-    commentBtn.style.backgroundColor = '#d9ecd0';
-    commentBtn.style.color = '#82b74b'
-})
-commentBtn.addEventListener("mouseleave", () => {
-    commentBtn.style.backgroundColor = 'white';
-    commentBtn.style.color = '#eea29a'
-})
+// create form and submit
 
 const form = document.getElementById("comment-form");
     form.addEventListener("submit", (e) => {
@@ -107,3 +107,4 @@ const form = document.getElementById("comment-form");
         form.reset();
         alert("Thank you for your review!")
     })
+}) // end of fetch
