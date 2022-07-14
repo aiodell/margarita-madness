@@ -27,6 +27,7 @@ h2{
 
 p{
   font-family: 'Roboto', sans-serif;
+}
 
 #sub{
   font-family: 'Roboto', sans-serif;
@@ -45,7 +46,6 @@ li{
   display: block;
   margin-bottom: 2rem;
 }
-
 
 .section-center {
   width: 90vw;
@@ -167,7 +167,6 @@ li{
   height: 200px; 
 }
 
-
 #comment-form{
     margin-top: auto;
     text-align: center;
@@ -179,7 +178,6 @@ li{
 #historyText{
   font-family: 'Roboto', sans-serif;
 }
-
 
 body{
   background-color: #f5f4f3;
@@ -231,8 +229,6 @@ body{
   border-radius: 3px;
   width: 250px;
 } 
-
-}
 
  #recipeBook{
   font-family: 'Roboto', sans-serif;
@@ -289,7 +285,7 @@ body{
   word-break: break-word;
   border: 0;
 }
-=======
+
 /*tab styles*/
 .tab-btn:nth-child(1).active {
   background-color: #d9ecd0;
@@ -305,7 +301,6 @@ body{
     background-color: #fefbd8;
     color: #ff7b25
 }
-
 
 .tab-btn:nth-child(1):hover {
   background-color: #d9ecd0;
