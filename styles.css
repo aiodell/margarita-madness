@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap%27');
 
 :root {
   --transition: all 0.3s linear;
@@ -9,7 +9,9 @@
 
 /* image  */
 body{
-  background-color: #f5f4f3
+  /* background-color: #f5f4f3 */
+    background-color: #f5f4f3;
+    background-image: url('4.jpeg');
 }
 
 h2{
@@ -17,7 +19,7 @@ h2{
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: 'Lexend Exa', sans-serif;
+  font-family:  'Roboto', sans-serif;
   font-size: 2rem;
 }
 
@@ -26,12 +28,12 @@ h2{
 }
 
 p{
-    font-family: 'Lexend Exa', sans-serif;
+    font-family:  'Roboto', sans-serif;
 
 }
 
 li{
-    font-family: 'Courier Prime', monospace;
+    font-family:  'Roboto', sans-serif;
 }
 
 .image img {
@@ -207,10 +209,10 @@ li{
 }
 
  #recipeBook{
-  font-family: 'Courier Prime', monospace;
+  font-family:  'Roboto', sans-serif;
 }
 #historyText{
-  font-family: 'Courier Prime', monospace;
+  font-family:  'Roboto', sans-serif;
 }
 /* style input */
 
